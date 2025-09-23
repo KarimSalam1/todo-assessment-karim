@@ -99,5 +99,7 @@ This project is deployed on Netlify:
 ## 👨‍💻 Author
 
 Karim Salam
+
 Frontend Developer | MERN Stack Developer
+
 [Github](https://github.com/KarimSalam1/)
