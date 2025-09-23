@@ -51,7 +51,6 @@ src/
 ## ⚡ Getting Started
 
 ```text
-
 1️⃣ Clone the Repository
 git clone https://github.com/KarimSalam1/todo-assessment-karim.git
 cd todo-assessment-karim
@@ -71,19 +70,16 @@ in your browser.
 ## 🌿 Branching & Workflow
 
 ```text
-
 Feature and bugfixes are developed in separate branches
 
 Pull Requests are used to merge changes into main
 
 Frequent commits show consistent progress
-
 ```
 
 ## 📦 Deployment
 
 ```text
-
 This project is deployed on Netlify:
 🌐 https://todoassessmentkarim.netlify.app
 
@@ -98,5 +94,10 @@ This project is deployed on Netlify:
 🎨 UI closely follows the provided Figma design
 
 ⚡ No custom backend is used, as per assessment requirements
-
 ```
+
+## 👨‍💻 Author
+
+Karim Salam
+Frontend Developer | MERN Stack Developer
+[Github](https://github.com/KarimSalam1/)
