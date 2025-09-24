@@ -47,7 +47,7 @@ function Todos() {
             <select
               value={filter}
               onChange={(e) => setFilter(e.target.value)}
-              className="bg-[#23262C] border border-gray-600 text-white rounded-md px-4 py-2"
+              className="bg-[#23262C] border border-gray-600 text-white rounded-md px-4 py-2 text-center"
             >
               <option value="all">All</option>
               <option value="active">Non-completed</option>
