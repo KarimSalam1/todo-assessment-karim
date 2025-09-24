@@ -66,7 +66,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-[#23262C] flex items-start justify-center py-10">
+    <div className="min-h-screen w-full bg-[#23262C] flex items-start justify-center py-8">
       <div className="rounded-[32px] flex flex-col items-center justify-center gap-16 w-full max-w-md">
         <div className="flex flex-col items-center gap-1">
           <h1 className="text-[40px] font-Poppins font-normal text-white/50">
@@ -91,7 +91,9 @@ const Login = () => {
                 placeholder="Email"
               />
               {error.email && (
-                <p className="text-red-500 text-sm">{error.email}</p>
+                <p className="text-red-500 font-Poppins text-sm">
+                  {error.email}
+                </p>
               )}
             </div>
 
@@ -104,23 +106,25 @@ const Login = () => {
                 placeholder="Password"
               />
               {error.password && (
-                <p className="text-red-500 text-sm">{error.password}</p>
+                <p className="text-red-500 font-Poppins text-sm">
+                  {error.password}
+                </p>
               )}
             </div>
 
             {error.general && (
-              <p className="text-red-500 text-sm text-center">
+              <p className="text-red-500 font-Poppins text-sm text-center">
                 {error.general}
               </p>
             )}
 
-            <p className="text-white/50 text-[16px] text-start">
+            <p className="text-white/50 font-Poppins text-[16px] text-start">
               Don’t have an account yet?{" "}
               <span
-                className="text-blue-400 cursor-pointer"
+                className="text-white/50 font-Poppins underline cursor-pointer"
                 onClick={() => navigate("/register")}
               >
-                Sign Up
+                Signup
               </span>
             </p>
 
@@ -128,7 +132,7 @@ const Login = () => {
               type="submit"
               onClick={handleSubmit}
               disabled={loading}
-              className="h-[50px] bg-[#F4F6FA] text-[#2E3239] rounded-[9px] font-Poppins font-normal text-[16px] mx-auto flex items-center justify-center hover:bg-gray-200 transition w-full cursor-pointer"
+              className="h-[50px] bg-[#F4F6FA] text-[#2E3239] rounded-[9px] font-Poppins font-normal text-[16px] mx-auto flex items-center justify-center hover:bg-gray-200 transition w-[70%] cursor-pointer"
             >
               {loading ? "Logging in..." : "Login"}
             </button>

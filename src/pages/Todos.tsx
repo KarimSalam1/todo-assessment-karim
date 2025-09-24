@@ -47,7 +47,7 @@ function Todos() {
             <select
               value={filter}
               onChange={(e) => setFilter(e.target.value)}
-              className="bg-[#23262C] border border-gray-600 text-white rounded-md px-4 py-2 text-center"
+              className="bg-[#23262C] font-Poppins border border-gray-600 text-white rounded-md px-4 py-2 text-center"
             >
               <option value="all">All</option>
               <option value="active">Non-completed</option>
@@ -90,10 +90,10 @@ function Todos() {
               </div>
               <button
                 onClick={() => handleDelete(todo.id)}
-                className="text-white/50 hover:text-red-400 transition cursor-pointer"
+                className="text-white/50  hover:text-red-400 transition cursor-pointer"
                 aria-label="Delete"
               >
-                <FiTrash2 size={22} />
+                <FiTrash2 size={32} />
               </button>
             </li>
           ))}
