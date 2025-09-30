@@ -2,12 +2,10 @@ import { useState } from "react";
 import { FiTrash2 } from "react-icons/fi";
 import { useSelector, useDispatch } from "react-redux";
 import { addTodo, toggleTodo, deleteTodo } from "../redux/slices/todoSlice";
-import type { Todo } from "../redux/slices/todoSlice";
+import type { RootState } from "../redux/store/store";
 
 function Todos() {
-  const todos = useSelector(
-    (state: { todos: { list: Todo[] } }) => state.todos.list
-  );
+  const todos = useSelector((state: RootState) => state.todos.list);
   const dispatch = useDispatch();
   const [newNote, setNewNote] = useState("");
   const [filter, setFilter] = useState("all");
